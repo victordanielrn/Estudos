@@ -35,9 +35,9 @@ public class Programforeach2 {
         System.out.println("-----------------------------------------");
         System.out.println("index of bob:" + list.indexOf("bob"));
         System.out.println("------------------------------------");
-        //List<String> result = list.stream().filter(x-> x.charAt(0) == 'A').collect(Collectors.toList());
-        //for (String x : result ){
-            //System.out.println(x);
-        //}
+        List<String> result = list.stream().filter(x-> x.charAt(0) == 'A').toList();
+        for (String x : result ){
+            System.out.println(x);
+        }
     }
 }
