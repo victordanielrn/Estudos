@@ -1,6 +1,6 @@
 package entitie;
 
-import entities.enums.WorkLevel;
+import entities.enums.WorkerLevel;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Worker {
     private String name;
-    private WorkLevel level;
+    private WorkerLevel level;
     private Double baseSalary;
 
     private Departament departament;
@@ -16,7 +16,7 @@ public class Worker {
     public Worker(){
     }
 
-    public Worker(String name, WorkLevel level, Double baseSalary, Departament departament) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Departament departament) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
@@ -31,11 +31,11 @@ public class Worker {
         this.name = name;
     }
 
-    public WorkLevel getLevel() {
+    public WorkerLevel getLevel() {
         return level;
     }
 
-    public void setLevel(WorkLevel level) {
+    public void setLevel(WorkerLevel level) {
         this.level = level;
     }
 
